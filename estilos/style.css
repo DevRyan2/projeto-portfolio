@@ -65,6 +65,8 @@ header {
 #menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
+
+  overflow: hidden;
 }
 
 main {
@@ -130,5 +132,43 @@ div#social a {
 
 div#social a:hover {
   color: var(--destaque-inverso);
+
+}
+
+section#detalhes {
+  grid-column: 2;
+}
+
+article {
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background-color: var(--fundo-card);
+  border-radius: 8px;
+}
+
+article h2 {
+  margin-bottom: 10px;
+
+  color: var(--destaque);
+}
+
+article#video .video-container {
+  position: relative;
+
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 8px;
 
 }
